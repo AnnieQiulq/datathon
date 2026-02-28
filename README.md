@@ -21,13 +21,13 @@ $$
 ### Where:
 
 **Total Debt includes:**
-- Mortgage debt
-- Car loans
-- Credit card debt
-- Other personal loans
+- Mortgage debt (PWDPRMOR)
+- Student loan debt (PWDSLOAN)
+- Credit card debt (PWDSTCRD)
+- Other personal loans (PWDSTLOC)
 
 **Annual Income refers to:**
-- After-tax annual income
+- After-tax annual income (PEFATINC)
 
 ---
 
