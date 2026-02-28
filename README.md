@@ -1,44 +1,115 @@
-# Datathon
-
-_ _
-
+# 2026 Datathon -- Team 59
 ---
 
 ## 1.Overview
+This project analyzes financial resilience using a personal finance dataset.
+Our main objective is to understand how debt burden relative to income affects financial stability and short-term financial stress.
 
-
-
----
-
-## 2.Features
-
-### 2.1. 
+The key concept of this project is:
+Debt-to-Income Ratio (DTI)
 
 
 ---
+## 2. Define Financial Resilience
 
-### 2.2. 
+### 🔹 Debt-to-Income Ratio (DTI)
 
+$$
+DTI = \frac{Total\ Debt}{Annual\ Income}
+$$
 
+### Where:
 
+**Total Debt includes:**
+- Mortgage debt
+- Car loans
+- Credit card debt
+- Other personal loans
 
-
-
----
-
-### 2.3. 
-
----
-
-### 2.4. 
-
----
-
-## 3.Architecture
-
+**Annual Income refers to:**
+- After-tax annual income
 
 ---
 
+### 🔹 Interpretation of DTI
+
+The Debt-to-Income Ratio (DTI) measures how much of an individual’s income is used to pay debt obligations.
+
+- A higher DTI suggests higher financial burden  
+- A lower DTI indicates stronger financial stability  
+
+---
+
+### 🔹 Financial Resilience Classification
+
+We classify individuals based on DTI:
+
+- **Thriving:** DTI < 0.2  
+- **Coping:** 0.2 ≤ DTI < 0.5  
+- **At Risk:** DTI ≥ 0.5  
+
+**Alternative industry benchmark:**
+
+- Low DTI (<30%) → Financially stable  
+- High DTI (>40%) → Potential financial stress  
+
+---
+
+## 3. Short-Term Financial Stress Definition
+
+Short-term financial stress is defined as:
+
+Whether an individual skipped any debt payment in the last 12 months.
+
+- Yes → Short-term financial stress  
+- No → No short-term financial stress  
+
+---
+
+## 4. Analytical Direction
+
+We aim to quantify which financial and demographic variables most strongly predict:
+
+- Short-term financial stress  
+- Long-term financial resilience  
+
+### Potential Predictors:
+
+- Income level  
+- Total debt  
+- Debt composition  
+- Age  
+- Education level  
+- Employment type  
+- Net worth  
+- Asset value  
+
+---
+
+## 5. Methodology Overview
+
+### Step 1: Data Cleaning
+- Remove negative DTI values  
+- Remove infinite DTI values  
+- Check missing values  
+
+### Step 2: Feature Engineering
+- Calculate Total Debt  
+- Compute DTI  
+- Create Financial Resilience categories  
+
+### Step 3: Exploratory Data Analysis
+- DTI distribution  
+- Compare stress vs non-stress groups  
+- Correlation analysis  
+
+### Step 4: Modeling
+- Logistic regression  
+- Feature importance analysis  
+- Predict short-term financial stress  
+
+---
+以上已修改
 ## 4.Tech Stack
 
 - **Language:** Java (JDK 21)
@@ -121,30 +192,6 @@ mvn -pl app-fx -am javafx:run
     - Module: `app-fx`
     - Main class: `com.smartcalendar.fx.App`
 - Run.
-
----
-
-## 7.Usage
-
-1. **L**
-    - 
-    - 
-    - 
-
----
-
-## 8.Roadmap
-
-- [x] Multi-module Maven project (`core`, `app-fx`)
-- [x] Login & signup UI integrated with core
-- [x] Monthly calendar grid with event pills and `+n` overflow
-- [x] Event creation via double-click dialog
-- [x] Event editing via dialog
-- [x] Event deletion workflow
-- [x] Color suggestions with ColorPicker + external API
-- [x] Weather assistant for user-typed city/country
-- [x] Persistent event storage (JSON/SQLite)
-- [x] General UX polish and bug fixing
 
 ---
 
