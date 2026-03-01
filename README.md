@@ -68,7 +68,7 @@ We aim to quantify which financial and demographic variables most strongly predi
 - Family Type (PFMTYPG) 
 - Home Ownership (PFTENUR)
 - Work Status 2022 (PLFFPTME)
-- Number of Earners (Number of Earners)
+- Number of Earners (PNBEARG)
 - Bank Deposits (PWASTDEP)
 
 ---
@@ -116,7 +116,6 @@ We aim to quantify which financial and demographic variables most strongly predi
 datathon/
 │
 ├── main.ipynb                         # Main analysis notebook
-├── Datathon.ipynb                     # Additional analysis notebook
 ├── Personal Finance Case.pdf          # Case description
 ├── personal_finance_dataset(origin).xlsx         # Case data with description
 ├── personal_finance_dataset(without...).xlsx     # Pure case data
