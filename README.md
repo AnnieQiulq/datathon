@@ -100,7 +100,7 @@ We aim to quantify which financial and demographic variables most strongly predi
 
 - **Language:** Python 3 （Jupyter Notebook）
 - **Architecture:** Notebook-based data analysis pipeline (EDA → feature engineering → linear regression modeling → visualization)
-- **Key libraries** pandas, numpy, scikit-learn, matplotlib, seaborn
+- **Key libraries:** pandas, numpy, scikit-learn, matplotlib, seaborn
 
 ---
 仅structure未修改
@@ -153,7 +153,7 @@ From the project root:
 ```bash
 jupyter notebook
 ```
--Open main.ipynb, then select Restart & Run All to reproduce the full analysis.
+- Open main.ipynb, then select Restart & Run All to reproduce the full analysis.
 
 ---
 
