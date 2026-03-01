@@ -51,42 +51,29 @@ We classify individuals based on DTI:
 **Alternative industry benchmark:**
 
 - Low DTI (<30%) → Financially stable  
-- High DTI (>40%) → Potential financial stress  
+- High DTI (>40%) → Potential financial stress   
 
 ---
 
-## 3. Short-Term Financial Stress Definition
-
-Short-term financial stress is defined as:
-
-Whether an individual skipped any debt payment in the last 12 months.
-
-- Yes → Short-term financial stress  
-- No → No short-term financial stress  
-
----
-
-## 4. Analytical Direction
+## 3. Analytical Direction
 
 We aim to quantify which financial and demographic variables most strongly predict:
 
-- Short-term financial stress  
-- Long-term financial resilience  
+- financial resilience (short-term financial stress)
 
 ### Potential Predictors:
 
-- Income level  
-- Total debt  
-- Debt composition  
-- Age  
-- Education level  
-- Employment type  
-- Net worth  
-- Asset value  
+- Age Group (PAGEMIEG)
+- Education Level (PEDUCMIE)
+- Family Type (PFMTYPG) 
+- Home Ownership (PFTENUR)
+- Work Status 2022 (PLFFPTME)
+- Number of Earners (Number of Earners)
+- Bank Deposits (PWASTDEP)
 
 ---
 
-## 5. Methodology Overview
+## 4. Methodology Overview
 
 ### Step 1: Data Cleaning
 - Remove negative DTI values  
@@ -104,25 +91,20 @@ We aim to quantify which financial and demographic variables most strongly predi
 - Correlation analysis  
 
 ### Step 4: Modeling
-- Logistic regression  
+- Linear regression  
 - Feature importance analysis  
-- Predict short-term financial stress  
-
----
-以上已修改
-## 4.Tech Stack
-
-- **Language:** Java (JDK 21)
-- **UI:** JavaFX (FXML + controllers)
-- **Build:** Maven (multi-module: `core`, `app-fx`)
-- **Testing:** JUnit
-- **HTTP client:** `java.net.http.HttpClient`
-- **Database:** SQL-based storage for users (local); in-memory storage for events
-- **Architecture:** Clean Architecture / hexagonal style
 
 ---
 
-## 5.Project Structure
+## 5.Tech Stack
+
+- **Language:** Python 3 （Jupyter Notebook）
+- **Architecture:** Notebook-based data analysis pipeline (EDA → feature engineering → linear regression modeling → visualization)
+- **Key libraries:** pandas, numpy, scikit-learn, matplotlib, seaborn
+
+---
+仅structure未修改
+## 6.Project Structure
 
 ```text
 SmartCalendar/
@@ -149,62 +131,33 @@ SmartCalendar/
 
 ---
 
-## 6.Build & Run
+## 7.Run
 
 ### Prerequisites
 
-- **JDK 21** installed.
-- Maven installed or integrated in your IDE (IntelliJ IDEA recommended).
-- JavaFX available via the **javafx-maven-plugin** (configured in `app-fx/pom.xml`).
+- python 3.x
+- Jupyter Notebook
+- You may use Anaconda or pip
 
 ### Clone
 
 ```bash
-git clone https://github.com/JacobChan182/SmartCalendar.git
-cd SmartCalendar
+git clone https://github.com/AnnieQiulq/datathon.git
+cd datathon
 ```
 
-### Build
+### Run
 
 From the project root:
 
 ```bash
-mvn clean install -DskipTests
+jupyter notebook
 ```
-
-This builds both `core` and `app-fx`.
-
-### Run (Maven)
-
-From the project root:
-
-```bash
-mvn -pl app-fx -am javafx:run
-```
-
-- `-pl app-fx` – run only the JavaFX module.
-- `-am` – build dependencies (e.g. `core`) automatically.
-
-### Run (IDE)
-
-- Import the project as a **Maven project**.
-- Set the run configuration to:
-    - Module: `app-fx`
-    - Main class: `com.smartcalendar.fx.App`
-- Run.
+- Open main.ipynb, then select Restart & Run All to reproduce the full analysis.
 
 ---
 
-## 9.Contribution Guidelines
-
-- Use feature branches (e.g. `feat/edit-event-ui`, `feat/weather-panel`).
-- Keep commits focused and descriptive (e.g., `feat: add edit event dialog`).
-- Run `mvn test` before opening a pull request.
-- For UI changes, include a short description and, if possible, a screenshot.
-
----
-
-## 10.License
+## 8.License
 
 **All rights reserved. No license granted.**
 
