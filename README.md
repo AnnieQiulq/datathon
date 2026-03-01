@@ -92,7 +92,13 @@ We aim to quantify which financial and demographic variables most strongly predi
 
 ### Step 4: Modeling
 - Linear regression  
-- Feature importance analysis  
+- Feature importance analysis
+
+### Step 5: Visualization
+- Bar charts of key variables vs resilience categories
+- Boxplots for top 2 influential variables
+- DTI distribution histogram
+- Shock simulation comparison plots
 
 ---
 
@@ -103,30 +109,18 @@ We aim to quantify which financial and demographic variables most strongly predi
 - **Key libraries:** pandas, numpy, scikit-learn, matplotlib, seaborn
 
 ---
-仅structure未修改
+
 ## 6.Project Structure
 
 ```text
-SmartCalendar/
-├─ core/
-│  ├─ src/main/java/
-│  │  ├─ entity/
-│  │  ├─ use_case/
-│  │  ├─ data_access/
-│  │  └─ interface_adapter/
-│  └─ pom.xml
-├─ app-fx/
-│  ├─ src/main/java/com/smartcalendar/fx/
-│  │  ├─ App.java
-│  │  └─ MainController.java (and other controllers)
-│  ├─ src/main/resources/com/smartcalendar/fx/
-│  │  ├─ MainView.fxml
-│  │  ├─ LoginView.fxml
-│  │  ├─ SignupView.fxml
-│  │  └─ style.css
-│  └─ pom.xml
-├─ pom.xml          # Parent POM (aggregates modules)
-└─ README.md
+datathon/
+│
+├── main.ipynb                         # Main analysis notebook
+├── Datathon.ipynb                     # Additional analysis notebook
+├── Personal Finance Case.pdf          # Case description
+├── personal_finance_dataset(origin).xlsx         # Case data with description
+├── personal_finance_dataset(without...).xlsx     # Pure case data
+└── README.md
 ```
 
 ---
@@ -145,6 +139,18 @@ SmartCalendar/
 git clone https://github.com/AnnieQiulq/datathon.git
 cd datathon
 ```
+
+### Instal
+
+Before running the notebook, install the required packages
+- Option 1: Using pip
+  ```bash
+  pip install pandas numpy matplotlib seaborn scikit-learn openpyxl
+  ```
+- Option 2: Using Anaconda
+  ```bash
+  conda install pandas numpy matplotlib seaborn scikit-learn openpyxl
+  ```
 
 ### Run
 
