@@ -2,15 +2,17 @@
 ---
 
 ## 1.Overview
-This project analyzes financial resilience using a personal finance dataset.
-Our main objective is to understand how debt burden relative to income affects financial stability and short-term financial stress.
 
-The key concept of this project is:
-Debt-to-Income Ratio (DTI)
+Financial resilience is structurally driven by housing exposure and life-cycle debt patterns.
+
+Using a Debt-to-Income (DTI) framework, we identify the key drivers of financial vulnerability and quantify the impact of housing cost shocks.
+
+Our findings highlight the disproportionate burden faced by mortgage-exposed and working-age households.
 
 
 ---
 ## 2. Define Financial Resilience
+We measure financial resilience using：
 
 ### 🔹 Debt-to-Income Ratio (DTI)
 
@@ -21,15 +23,13 @@ $$
 ### Where:
 
 **Total Debt includes:**
-- Mortgage debt (PWDPRMOR)
-- Student loan debt (PWDSLOAN)
-- Credit card debt (PWDSTCRD)
-- Other personal loans (PWDSTLOC)
+- Mortgage debt 
+- Student loan debt 
+- Credit card debt 
+- Other personal loans 
 
 **Annual Income refers to:**
-- After-tax annual income (PEFATINC)
-
----
+- After-tax annual income 
 
 ### 🔹 Interpretation of DTI
 
@@ -37,22 +37,7 @@ The Debt-to-Income Ratio (DTI) measures how much of an individual’s income is 
 
 - A higher DTI suggests higher financial burden  
 - A lower DTI indicates stronger financial stability  
-
----
-
-### 🔹 Financial Resilience Classification
-
-We classify individuals based on DTI:
-
-- **Thriving:** DTI < 0.2  
-- **Coping:** 0.2 ≤ DTI < 0.5  
-- **At Risk:** DTI ≥ 0.5  
-
-**Alternative industry benchmark:**
-
-- Low DTI (<30%) → Financially stable  
-- High DTI (>40%) → Potential financial stress   
-
+ 
 ---
 
 ## 3. Analytical Direction
@@ -63,13 +48,13 @@ We aim to quantify which financial and demographic variables most strongly predi
 
 ### Potential Predictors:
 
-- Age Group (PAGEMIEG)
-- Education Level (PEDUCMIE)
-- Family Type (PFMTYPG) 
-- Home Ownership (PFTENUR)
-- Work Status 2022 (PLFFPTME)
-- Number of Earners (PNBEARG)
-- Bank Deposits (PWASTDEP)
+- Age Group 
+- Education Level 
+- Family Type 
+- Home Ownership 
+- Work Status 2022 
+- Number of Earners
+- Bank Deposits 
 
 ---
 
@@ -99,6 +84,47 @@ We aim to quantify which financial and demographic variables most strongly predi
 - Boxplots for top 2 influential variables
 - DTI distribution histogram
 - Shock simulation comparison plots
+
+---
+
+### Key Findings
+
+- 1️⃣ Housing Tenure is the Strongest Predictor
+Mortgage-exposed households exhibit significantly higher DTI levels and are more sensitive to financial shocks.
+
+- 2️⃣ Working-Age Households Carry Higher Debt Burdens
+Individuals aged 25–54 show elevated financial vulnerability relative to older households.
+
+- 3️⃣ Risk Compounds Across Multiple Factors
+Financial stress emerges from layered risk exposure rather than single-variable effects
+
+## Shock Simulation
+
+We simulate a 10% rent increase to evaluate resilience sensitivity.
+
+Results show a measurable increase in the proportion of at-risk households, highlighting structural housing cost exposure.
+
+---
+
+## Policy Recommendations
+
+### Target Mortgage-Exposed Households
+- Temporary mortgage deferrals during income shocks
+- Structured refinancing for high-DTI borrowers
+
+### Strengthen Financial Buffers for Working-Age Households
+- Automatic emergency savings programs
+- Matched savings incentives
+
+### Implement Multi-Factor Risk Screening
+- Combine DTI, housing tenure, age, and debt composition
+- Enable proactive intervention before financial distress escalates
+
+
+## Conclusion
+
+Financial resilience is structurally driven.  
+Targeted, data-informed interventions can significantly reduce systemic financial vulnerability
 
 ---
 
@@ -162,7 +188,13 @@ jupyter notebook
 
 ---
 
-## 8.License
+## 8.AI Tool Usage
+
+We used ChatGPT for code assistance and debugging.
+
+---
+
+## 9.License
 
 **All rights reserved. No license granted.**
 
