@@ -51,38 +51,25 @@ We classify individuals based on DTI:
 **Alternative industry benchmark:**
 
 - Low DTI (<30%) → Financially stable  
-- High DTI (>40%) → Potential financial stress  
+- High DTI (>40%) → Potential financial stress   
 
 ---
 
-## 3. Short-Term Financial Stress Definition
-
-Short-term financial stress is defined as:
-
-Whether an individual skipped any debt payment in the last 12 months.
-
-- Yes → Short-term financial stress  
-- No → No short-term financial stress  
-
----
-
-## 4. Analytical Direction
+## 3. Analytical Direction
 
 We aim to quantify which financial and demographic variables most strongly predict:
 
-- Short-term financial stress  
-- Long-term financial resilience  
+- financial resilience (short-term financial stress)
 
 ### Potential Predictors:
 
-- Income level  
-- Total debt  
-- Debt composition  
-- Age  
-- Education level  
-- Employment type  
-- Net worth  
-- Asset value  
+- Age Group (PAGEMIEG)
+- Education Level (PEDUCMIE)
+- Family Type (PFMTYPG) 
+- Home Ownership (PFTENUR)
+- Work Status 2022 (PLFFPTME)
+- Number of Earners (Number of Earners)
+- Bank Deposits (PWASTDEP)
 
 ---
 
@@ -104,24 +91,19 @@ We aim to quantify which financial and demographic variables most strongly predi
 - Correlation analysis  
 
 ### Step 4: Modeling
-- Logistic regression  
+- Linear regression  
 - Feature importance analysis  
-- Predict short-term financial stress  
+
+---
+
+## 4.Tech Stack
+
+- **Language:** Python 3 （Jupyter Notebook）
+- **Architecture:** Notebook-based data analysis pipeline (EDA → feature engineering → linear regression modeling → visualization)
+- **Key libraries** pandas, numpy, sklearn, matplotlib, seaborn
 
 ---
 以上已修改
-## 4.Tech Stack
-
-- **Language:** Java (JDK 21)
-- **UI:** JavaFX (FXML + controllers)
-- **Build:** Maven (multi-module: `core`, `app-fx`)
-- **Testing:** JUnit
-- **HTTP client:** `java.net.http.HttpClient`
-- **Database:** SQL-based storage for users (local); in-memory storage for events
-- **Architecture:** Clean Architecture / hexagonal style
-
----
-
 ## 5.Project Structure
 
 ```text
